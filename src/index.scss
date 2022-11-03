@@ -1,13 +1,122 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: #333;
+  background-color: whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  min-height: calc(100vh - 120px);
+}
+
+.main-navigation {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  a {
+    position: relative;
+    font-size: 1.3rem;
+    color: inherit;
+    text-decoration: none;
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+    }
+
+    &.active {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 3px;
+        background-color: crimson;
+      }
+    }
+  }
+}
+
+.page {
+  padding-top: 6rem;
+  h1 {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 60px;
+    font-size: 20px;
+    font-weight: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      height: 2px;
+      width: 50px;
+      background-color: #333;
+    }
+  }
+}
+.greetnig-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  span {
+    color: crimson;
+  }
+}
+
+.greetnig-text {
+  max-width: 70%;
+  line-height: 25px;
+  margin-bottom: 3rem;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.cta {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: crimson;
+  color: whitesmoke;
+  transition: background-color 0.25s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(180, 17, 50);
+  }
 }

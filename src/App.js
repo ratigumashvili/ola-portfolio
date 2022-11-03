@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/ui/Header";
+import Footer from "./components/ui/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -8,15 +9,17 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-      <h1>Rati Gumashvili</h1>
+      <div className="wrapper">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }
