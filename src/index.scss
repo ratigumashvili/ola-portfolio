@@ -105,6 +105,17 @@ footer {
 .page {
   padding-top: 6rem;
 
+  &.not-found {
+    a {
+      text-decoration: none;
+      display: block;
+      margin-left: 60px;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      color: crimson;
+    }
+  }
+
   .title-holder {
     display: flex;
     align-items: center;
