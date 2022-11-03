@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -93,6 +99,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2rem;
   }
 
   .filters {
@@ -102,7 +109,6 @@ footer {
   }
 
   h1 {
-    margin-bottom: 1rem;
     position: relative;
     padding-left: 60px;
     font-size: 20px;
@@ -193,6 +199,9 @@ footer {
       font-size: 12px;
       background-color: whitesmoke;
       border-radius: 5px;
+      box-shadow: 1px -1px 0px -135px rgba(0, 0, 0, 0.67);
+      -webkit-box-shadow: 1px -1px 0px -135px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 1px -1px 0px -135px rgba(0, 0, 0, 0.67);
     }
 
     img {
@@ -219,4 +228,39 @@ footer {
       }
     }
   }
+}
+
+.form-control {
+  display: flex;
+  gap: 0.5em;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em crimson;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
 }

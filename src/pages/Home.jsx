@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="page">
-      <h1>Hello,</h1>
+      <div className="title-holder">
+        <h1>Hello,</h1>
+      </div>
       <h2 className="greetnig-title">
         I'm <span>Rati</span> Gumashvili
       </h2>
