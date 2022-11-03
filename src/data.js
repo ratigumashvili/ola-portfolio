@@ -6,18 +6,17 @@ export const navBar = [
 ];
 
 export const technicalSkills = [
-  "HTML",
   "CSS",
+  "Sass",
   "Bootstrap",
   "Reactstrap",
-  "Sass",
   "JavaScript",
   "React",
   "Mapbox",
   "Omeka",
   "Neatline",
   "Doccano",
-  "ChartsJs",
+  "ChartJs",
   "Gephi",
   "visNetwork",
 ];
