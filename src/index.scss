@@ -129,6 +129,11 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   .filters {
@@ -195,6 +200,10 @@ footer {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  @media (max-width: 350px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 
 .card {
