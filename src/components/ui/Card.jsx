@@ -14,7 +14,7 @@ const Card = ({ item }) => {
         </div>
       </div>
       <div className="card-footer">
-        <a href={url} target="blank">
+        <a href={url} target="blank" title="Visit url">
           <FaExternalLinkAlt />
         </a>
         {client && (
