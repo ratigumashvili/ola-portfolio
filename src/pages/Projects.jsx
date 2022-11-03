@@ -26,6 +26,7 @@ const Projects = () => {
       setSelected("practice");
     }
   };
+
   return (
     <div className="page">
       <div className="title-holder">
