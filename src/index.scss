@@ -53,6 +53,7 @@ footer {
 
 .wrapper {
   min-height: calc(100vh - 120px);
+  padding-bottom: 4rem;
 }
 
 .main-navigation {
@@ -87,6 +88,19 @@ footer {
 
 .page {
   padding-top: 6rem;
+
+  .title-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
   h1 {
     margin-bottom: 1rem;
     position: relative;
@@ -140,7 +154,7 @@ footer {
 
 .projects {
   display: grid;
-  gap: 15px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
@@ -155,6 +169,15 @@ footer {
   .card-body,
   .card-footer {
     padding: 15px;
+  }
+
+  .card-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .card-text {
+    align-self: flex-end;
   }
 
   .card-header {
@@ -182,7 +205,18 @@ footer {
   .card-footer {
     margin-top: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 60px;
+
+    a {
+      text-decoration: none;
+      color: crimson;
+      transition: all 0.25s ease-out;
+
+      &:hover {
+        color: #333;
+      }
+    }
   }
 }
