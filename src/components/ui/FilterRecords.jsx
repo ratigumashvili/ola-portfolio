@@ -1,7 +1,7 @@
 const FilterRecords = ({ handleFilter, selected }) => {
   return (
     <div className="filters">
-      <label class="form-control">
+      <label className="form-control">
         <input
           type="radio"
           name="choose"
@@ -11,7 +11,7 @@ const FilterRecords = ({ handleFilter, selected }) => {
         />
         All
       </label>
-      <label class="form-control">
+      <label className="form-control">
         <input
           type="radio"
           name="choose"
@@ -21,7 +21,7 @@ const FilterRecords = ({ handleFilter, selected }) => {
         />
         Production
       </label>
-      <label class="form-control">
+      <label className="form-control">
         <input
           type="radio"
           name="choose"

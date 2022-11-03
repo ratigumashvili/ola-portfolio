@@ -1,29 +1,24 @@
-import { FaGithub, FaTwitter, FaRegEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { contacts } from "../../data";
 
 const Footer = () => {
   return (
     <footer>
       <div className="icons">
-        <a
-          href="https://github.com/ratigumashvili"
-          target="blank"
-          title="View my GitHub account"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://twitter.com/ratigumashvili"
-          target="blank"
-          title="Follow me on Twitter"
-        >
-          <FaTwitter />
-        </a>
-        <a href="mailto:ratigumashvili@gmail.com" title="Send me an email">
-          <FaRegEnvelope />
-        </a>
-        <a href="tel:+995551005473" title="Call me">
-          <FaPhoneAlt />
-        </a>
+        {contacts.map((item) => (
+          <a key={item.id} href={item.url} title={item.title}>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              viewBox="0 0 496 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d={`${item.icon}`}></path>
+            </svg>
+          </a>
+        ))}
       </div>
     </footer>
   );

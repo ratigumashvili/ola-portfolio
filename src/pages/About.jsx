@@ -15,7 +15,7 @@ const About = () => {
         ))}
       </ul>
       <h3>Interests:</h3>
-      <ul className="interests">
+      <ul className="list">
         {interesets.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
