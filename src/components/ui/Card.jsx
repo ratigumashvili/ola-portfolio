@@ -10,7 +10,7 @@ const Card = ({ item }) => {
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <div className="card-text">
-          <b>Tecnologies:</b> {tecnologies.join(", ")}
+          <b>Technologies:</b> {tecnologies.join(", ")}
         </div>
       </div>
       <div className="card-footer">
