@@ -5,6 +5,29 @@ export const navBar = [
   { name: "Projects", path: "/projects" },
 ];
 
+export const technicalSkills = [
+  "HTML",
+  "CSS",
+  "Bootstrap",
+  "Reactstrap",
+  "Sass",
+  "JavaScript",
+  "React",
+  "Mapbox",
+  "Omeka",
+  "Neatline",
+  "Doccano",
+  "ChartsJs",
+  "Gephi",
+  "visNetwork",
+];
+
+export const interesets = [
+  "Digital Humanities",
+  "Network Analysis",
+  "Data & Information Visualisation",
+];
+
 export const projectsData = [
   {
     id: 1,
