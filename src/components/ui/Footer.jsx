@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="icons">
         {contacts.map((item) => (
-          <a key={item.id} href={item.url} title={item.title}>
+          <a key={item.id} href={item.url} target="blank" title={item.title}>
             <svg
               stroke="currentColor"
               fill="currentColor"
