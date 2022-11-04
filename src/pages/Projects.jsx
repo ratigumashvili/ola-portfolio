@@ -10,19 +10,19 @@ const Projects = () => {
   useEffect(() => {
     setSelected("all");
   }, []);
-  const handleFilter = (e) => {
-    if (e.target.id === "all") {
+  const handleFilter = (value) => {
+    if (value === "all") {
       setInitialData(projectsData);
       setSelected("all");
     }
-    if (e.target.id === "production") {
-      const newArr = projectsData.filter((item) => item.stage === "Production");
-      setInitialData(newArr);
+    if (value === "production") {
+      setInitialData(
+        projectsData.filter((item) => item.stage === "Production")
+      );
       setSelected("production");
     }
-    if (e.target.id === "practice") {
-      const newArr = projectsData.filter((item) => item.stage === "Practice");
-      setInitialData(newArr);
+    if (value === "practice") {
+      setInitialData(projectsData.filter((item) => item.stage === "Practice"));
       setSelected("practice");
     }
   };

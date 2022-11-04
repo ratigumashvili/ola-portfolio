@@ -5,8 +5,7 @@ const FilterRecords = ({ handleFilter, selected }) => {
         <input
           type="radio"
           name="choose"
-          id="all"
-          onChange={handleFilter}
+          onChange={() => handleFilter("all")}
           checked={selected === "all"}
         />
         All
@@ -15,8 +14,7 @@ const FilterRecords = ({ handleFilter, selected }) => {
         <input
           type="radio"
           name="choose"
-          id="production"
-          onChange={handleFilter}
+          onChange={() => handleFilter("production")}
           checked={selected === "production"}
         />
         Production
@@ -25,8 +23,7 @@ const FilterRecords = ({ handleFilter, selected }) => {
         <input
           type="radio"
           name="choose"
-          id="practice"
-          onChange={handleFilter}
+          onChange={() => handleFilter("practice")}
           checked={selected === "practice"}
         />
         Practice
