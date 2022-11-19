@@ -8,10 +8,10 @@ const Contact = () => {
       </div>
       <h3>Get in touch</h3>
       <ul className="list">
-        {contacts.map((item) => (
-          <li key={item.id}>
-            <a href={item.url} target="blank">
-              {item.title}
+        {contacts.map(({ id, url, title }) => (
+          <li key={id}>
+            <a href={url} target="blank">
+              {title}
             </a>
           </li>
         ))}
