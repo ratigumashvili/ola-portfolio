@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Bio from "../components/ui/Bio";
 
 import { about } from "../data";
 
@@ -11,10 +12,7 @@ const Home = () => {
       <h2 className="greetnig-title">
         I'm <span>Rati</span> Gumashvili
       </h2>
-      <div
-        className="greetnig-text"
-        dangerouslySetInnerHTML={{ __html: about?.bio.toString() }}
-      ></div>
+      <Bio text={about?.bio} />
       <Link to="/projects" className="cta">
         View my projects
       </Link>

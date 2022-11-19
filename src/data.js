@@ -188,5 +188,5 @@ export const contacts = [
 ];
 
 export const about = {
-  bio: `<p>Tbilisi based front-end developer from Georgia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat qui corrupti beatae quibusdam dolorem reiciendis labore facere distinctio fuga, similique accusamus laudantium nam harum! Tempore accusamus suscipit sit aliquid.</p>`,
+  bio: `Tbilisi based front-end developer from Georgia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat qui corrupti beatae quibusdam dolorem reiciendis labore facere distinctio fuga, similique accusamus laudantium nam harum! Tempore accusamus suscipit sit aliquid.`,
 };
