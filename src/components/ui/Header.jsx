@@ -6,9 +6,9 @@ const Header = () => {
     <header>
       <nav className="main-navigation">
         <ul>
-          {navBar.map((item) => (
-            <li key={item.name}>
-              <NavLink to={item.path}>{item.name}</NavLink>
+          {navBar.map(({ name, path }) => (
+            <li key={name}>
+              <NavLink to={path}>{name}</NavLink>
             </li>
           ))}
         </ul>
