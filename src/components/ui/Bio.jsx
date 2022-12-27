@@ -1,7 +1,7 @@
-const Bio = (props) => {
+const Bio = ({ text }) => {
   return (
     <div className="greetnig-text">
-      <p>{props.text}</p>
+      <p>{text}</p>
     </div>
   );
 };
